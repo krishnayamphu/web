@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css</title>
+    <style>
+      h1 {
+        text-align: center;
+      }
+      h1::after {
+        content: "😀";
+      }
+      h1::before {
+        content: "😀";
+      }
+      p::before {
+        content: open-quote;
+      }
+      p::after {
+        content: close-quote;
+      }
+
+      .my-text::before {
+        content: no-open-quote;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello World</h1>
+    <h1>Hello World</h1>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+      fringilla, nunc at aliquet tincidunt, nunc nisl aliquam nunc, eget aliquam
+      nisl nunc vel nisl. Donec euismod, nisl vel aliquam aliquam, nunc nisl
+      aliquet nunc, eget aliquam nisl nunc vel nisl.
+    </p>
+    <p class="my-text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+      fringilla, nunc at aliquet tincidunt, nunc nisl aliquam nunc, eget aliquam
+      nisl nunc vel nisl. Donec euismod, nisl vel aliquam aliquam, nunc nisl
+      aliquet nunc, eget aliquam nisl nunc vel nisl.
+    </p>
+  </body>
+</html>
