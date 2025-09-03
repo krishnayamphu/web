@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+    <style>
+      table {
+        margin: 15px auto;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        border: 1px solid rgb(10, 72, 208);
+        padding: 5px;
+      }
+      .my-table tr:first-child {
+        background-color: orange;
+      }
+
+      .striped-table tr:nth-child(even) {
+        background-color: #cdcdcd;
+      }
+      .striped-table tr:hover {
+        background-color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <table class="my-table">
+      <tr>
+        <th>Name</th>
+        <th>Address</th>
+        <th>Age</th>
+      </tr>
+
+      <tr>
+        <td>Ram</td>
+        <td>Patan</td>
+        <td>25</td>
+      </tr>
+      <tr>
+        <td>Ram</td>
+        <td>Patan</td>
+        <td>25</td>
+      </tr>
+      <tr>
+        <td>Ram</td>
+        <td>Patan</td>
+        <td>25</td>
+      </tr>
+    </table>
+
+    <table>
+      <tr>
+        <th colspan="2">Amount</th>
+      </tr>
+      <tr>
+        <td>Rs</td>
+        <td>Paisa</td>
+      </tr>
+    </table>
+
+    <table>
+      <tr>
+        <th rowspan="2">Country</th>
+        <td>Japan</td>
+      </tr>
+      <tr>
+        <td>Korea</td>
+      </tr>
+    </table>
+
+    <table class="striped-table">
+      <tr>
+        <th>Name</th>
+        <th>Address</th>
+        <th>Age</th>
+      </tr>
+
+      <tr>
+        <td>Ram</td>
+        <td>Patan</td>
+        <td>25</td>
+      </tr>
+      <tr>
+        <td>Ram</td>
+        <td>Patan</td>
+        <td>25</td>
+      </tr>
+      <tr>
+        <td><input type="text" /></td>
+        <td><input type="text" /></td>
+        <td><input type="text" /></td>
+      </tr>
+    </table>
+
+    <table>
+      <tr>
+        <th>Image</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>
+          <img src="cat.PNG" alt="" width="100" />
+        </td>
+        <td>
+          <ul>
+            <li>List 1</li>
+            <li>List 1</li>
+            <li>List 1</li>
+            <li>List 1</li>
+          </ul>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
