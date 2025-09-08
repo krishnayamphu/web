@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css</title>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        background-color: pink;
+        float: left;
+        margin: 15px;
+        box-sizing: border-box;
+      }
+      .box1 {
+        transition-property: all;
+        transition-duration: 1000ms;
+        transition-timing-function: ease;
+        transition-delay: 0s;
+      }
+      .box1:hover {
+        background-color: blue;
+        border-radius: 50px;
+      }
+      .box2 {
+        transition: all 1s ease-in-out;
+      }
+      .box2:hover {
+        height: 200px;
+      }
+
+      .box3:hover {
+        width: 200px;
+        transition: all 1s ease-in-out;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1">box 1</div>
+    <div class="box2">box 2</div>
+    <div class="box3">box 3</div>
+  </body>
+</html>

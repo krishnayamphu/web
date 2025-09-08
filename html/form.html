@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form</title>
+    <style>
+      input {
+        display: block;
+        margin-bottom: 15px;
+      }
+      input[type="checkbox"],
+      input[type="radio"] {
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <label for="name">Name</label>
+      <input type="text" id="name" placeholder="your name" required />
+      <input type="email" placeholder="email address" required />
+      <input type="number" step="10" min="0" max="100" value="50" readonly />
+      <input type="password" placeholder="password" />
+      <input type="search" placeholder="search" />
+
+      <input type="checkbox" checked />checkbox 1
+      <input type="checkbox" />checkbox 2
+      <br />
+      <input type="radio" name="gender" checked /> Male
+      <input type="radio" name="gender" /> Female
+      <br />
+      <input type="range" min="0" max="100" value="70" />
+      <input type="color" />
+      <input type="file" multiple />
+      <input type="hidden" value="hello" />
+      <input type="date" />
+      <input type="time" />
+      <input type="week" />
+      <input type="url" />
+      <textarea name="" id="" rows="4"></textarea>
+      <select name="" id="">
+        <option value="np">Nepal</option>
+        <option value="in">India</option>
+        <option value="cn" selected>China</option>
+      </select>
+      <input type="button" value="button" />
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </form>
+  </body>
+</html>
