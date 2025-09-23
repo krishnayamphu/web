@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css</title>
+    <style>
+      :root {
+        --primary-color: rgb(8, 126, 53);
+      }
+
+      .text-primary {
+        color: var(--primary-color, blue);
+      }
+      .bg-primary {
+        background-color: var(--primary-color);
+      }
+      .text-white {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="bg-primary text-white">Hello World</h1>
+    <p class="text-primary">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque iure, esse
+      harum in libero asperiores facilis, adipisci labore perferendis vero vitae
+      dolore quidem odit ipsa doloribus nihil a pariatur autem.
+    </p>
+  </body>
+</html>

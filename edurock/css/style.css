@@ -1,0 +1,22 @@
+:root {
+  /*bs override */
+  --bs-primary: #5f2ded;
+  --bs-primary-rgb: 96, 45, 237;
+  --bs-dark-rgb: 25, 27, 30;
+
+  /* custom */
+  --primary-color: #5f2ded;
+  --secondary-color: #f2277e;
+  --dark-color: rgb(25, 27, 30);
+}
+
+.site-header {
+  font-size: 14px;
+}
+
+.site-header a:hover {
+  color: var(--primary-color) !important;
+}
+a {
+  transition: all 0.3s;
+}
