@@ -2,6 +2,7 @@
   /*bs override */
   --bs-primary: #5f2ded;
   --bs-primary-rgb: 96, 45, 237;
+  --bs-secondary-rgb: 242, 39, 126;
   --bs-dark-rgb: 25, 27, 30;
 
   /* custom */
@@ -19,4 +20,46 @@
 }
 a {
   transition: all 0.3s;
+}
+
+#primary-nav a {
+  transition: all 0.3s;
+}
+#primary-nav a:hover {
+  color: var(--primary-color) !important;
+}
+#primary-nav .action-links a:nth-child(2) {
+  padding: 8px 12px;
+}
+#primary-nav .action-links a:hover {
+  background-color: var(--primary-color) !important;
+  color: #fff !important;
+}
+
+#hero-banner {
+  background-color: #f7f8fd;
+  padding: 2rem 0;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(50%);
+  }
+}
+.hero-animate1 {
+  height: 50px;
+  top: 55%;
+  left: 5%;
+  z-index: -1;
+  opacity: 0.5;
+  animation: bounce 2s ease-in-out infinite alternate;
+}
+.skew-img {
+  transition: all 0.3s;
+}
+.skew-img:hover {
+  transform: skew(-2deg, 0deg);
 }
