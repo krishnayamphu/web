@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS</title>
+  </head>
+  <body>
+    <input type="text" id="t1" oninput="upperText()" />
+    <p>Length: <span id="len">0</span></p>
+
+    <input type="checkbox" />
+    <input type="checkbox" />
+    <input type="checkbox" />
+    <input
+      id="myrange"
+      type="range"
+      min="0"
+      value="90"
+      max="100"
+      oninput="getValue()"
+    />
+    <p>Value: <span id="val"></span></p>
+    <script>
+      function upperText() {
+        let data = document.getElementById("t1").value;
+        document.getElementById("t1").value = data.toUpperCase();
+        document.getElementById("len").innerHTML = data.length;
+      }
+
+      function getValue() {
+        let data = document.getElementById("myrange").value;
+        document.getElementById("val").innerHTML = data;
+      }
+    </script>
+  </body>
+</html>
