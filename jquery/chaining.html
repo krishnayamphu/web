@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p {
+        background-color: lightblue;
+        padding: 20px;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <button>start action</button>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia neque
+      autem, veritatis sed sequi facere possimus nulla accusamus aspernatur.
+      Libero itaque praesentium eveniet sed ab sint reprehenderit. Corrupti,
+      modi quisquam.
+    </p>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("button").click(function () {
+          $("p")
+            .hide(1000)
+            .show(2000)
+            .fadeOut(3000)
+            .fadeIn(2000)
+            .slideDown(1500)
+            .slideUp(5000, function () {
+              alert("All animations are done");
+            });
+        });
+      });
+    </script>
+  </body>
+</html>
